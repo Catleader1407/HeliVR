@@ -8,6 +8,8 @@ public class Weight : MonoBehaviour
     [Header("Weight Properties")]
     public float weightInLbs = 10f;
 
+    public float weight;
+
     const float lbsToKg = 0.454f;
     const float kgTolbs = 2.205f;
     private Rigidbody rb;
@@ -18,6 +20,7 @@ public class Weight : MonoBehaviour
     void Start()
     {
         float finalKG = weightInLbs * lbsToKg;
+        weight = finalKG;
         rb = GetComponent<Rigidbody>();
         if (rb)
         {

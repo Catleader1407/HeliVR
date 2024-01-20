@@ -1031,6 +1031,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1883091677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883091674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9641a4d36ea0bc47b8fec31d23e0452, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vertical: 0
+  horizontal: 0
+--- !u!114 &1883091679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883091674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3873e7b81ee9da41802317e57537e38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9166351340020732952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1105,6 +1131,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7108086238838447736, guid: feb9509e3718fbd49b2c0f56edf7c883, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1883091676}
+    - targetCorrespondingSourceObject: {fileID: 7108086238838447736, guid: feb9509e3718fbd49b2c0f56edf7c883, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1883091677}
+    - targetCorrespondingSourceObject: {fileID: 7108086238838447736, guid: feb9509e3718fbd49b2c0f56edf7c883, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1883091679}
   m_SourcePrefab: {fileID: 100100000, guid: feb9509e3718fbd49b2c0f56edf7c883, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

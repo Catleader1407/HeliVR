@@ -2,29 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Forces : MonoBehaviour
+public class Forces : Base_RBController
 {
     #region Variables
     public float maxSpeed = 1.0f;
     public Vector3 movementDirection = new Vector3(0f, 0f, 1f);
 
-    private Rigidbody rb;
+
     #endregion
 
-    #region Builtin Methods
-    // Start is called before the first frame update
-    void Start()
+    #region Custom Methods
+    protected override void HandleForce()
     {
-        rb = GetComponent<Rigidbody>();
+        rb.AddForce(movementDirection * maxSpeed);
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        if (rb)
-        {
-            rb.AddForce(movementDirection * maxSpeed);
-        }
-    }
+
     #endregion
 }
