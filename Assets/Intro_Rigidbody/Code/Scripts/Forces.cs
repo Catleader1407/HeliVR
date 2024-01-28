@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using IndiePixel;
 
 public class Forces : Base_RBController
 {
@@ -12,7 +13,8 @@ public class Forces : Base_RBController
     #endregion
 
     #region Custom Methods
-    protected override void HandleForce()
+
+    protected override void HandlePhysics()
     {
         rb.AddForce(movementDirection * maxSpeed);
     }
